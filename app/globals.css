@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+#header{
+padding: 75px;
+text-align: right;
+font-size: 25px;
+font-style: unset;
+background-image: url(../img/green-yoga-essentials-arrangement.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: azure;
+border: #000000;
+
+
+
+}
+.navegación{
+background-color: rgb(0, 0, 0);
+}
+.nav{
+  display: inline-flex;
+  color: aliceblue;
+  padding: 5px;
+  margin: 3px;
+  text-align: center;
+}
+.nav>li{
+  margin:3px;
+  padding-top: 5px;
+}
+.nav>li:hover{
+color: rgba(144, 227, 29, 0.807);
+}
+#nit{
+  font-size: 0.75em;
+  color: rgb(4, 61, 14);
+  font-style:oblique;
+  box-shadow: inset;
+  }
+  #nit:hover{
+    color: #000000;
+    font-size: 30px;
+    
+    
+  }
+  #title:hover{
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 253, 253, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #a6b520;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #3e8e41;
+}
