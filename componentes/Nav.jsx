@@ -6,6 +6,7 @@ export default function Nav(){
             <ul class="nav">
                 <li> <Link href="/Acerca">Acerca</Link></li>
                 <li> <Link href="/Inicio">Inicio</Link></li>
+                <li><Link href="/productos">Productos</Link></li>
                <li><div class="dropdown">
                 <button class="dropbtn">Categorias</button>
                <div class="dropdown-content">
